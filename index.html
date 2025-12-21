@@ -64,6 +64,38 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
     box-shadow: 0 0 25px rgba(255, 140, 0, 0.15);
   }
 
+  .hanging-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.hanging-picture {
+  position: relative;
+  padding-top: 30px;
+}
+
+.hanging-picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+  background: #b87333; /* rope color */
+  transform: translateX(-50%);
+  box-shadow: 0 0 6px rgba(255, 152, 0, 0.6);
+}
+
+.hanging-picture img {
+  width: 140px;
+  border: 4px solid #ff9800;
+  border-radius: 6px;
+  background: #2a1300;
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+}
+
   b {
     color: #ffcc80;
   }
@@ -73,7 +105,17 @@ html {-webkit-transition : -webkit-filter 300ms linear;}
 }</style></head>
 
 <body>
+  
+<div class="hanging-wrapper">
+  <div class="hanging-picture">
+    <img src="Coat.png" alt="Coat of Arms">
+  </div>
 
+  <div class="hanging-picture">
+    <img src="second-image.png" alt="Second Picture">
+  </div>
+</div>
+  
 <div class="divider">──────⪩ ⪨──────</div>
 <h1>КАНДИДАТУРА ГІНГЕРА</h1>
 <div class="subtitle">Офіційне звернення мера спавну сервера <b>LastHope</b></div>
